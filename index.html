@@ -1,0 +1,62 @@
+<!--Akanksha Shivaji Pingale-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Landing page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#">
+                <img src="logo.png" class="logo" alt=""> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Whats New</a></li>
+                <li><a href="#"> NewsLetter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </header>
+
+
+        <div class="content">
+            <div class="textBox">
+                <h2> That's What I Like <br><span> 
+                 Sprite
+            </span></h2>
+                <p> Sprite comes in multiple flavors, including cranberry, cherry, grape, orange, tropical, ginger, and vanilla. Ice, peach, Berryclear remix, and newer versions of the drinks are artificially sweetened. </p>
+                <a href="#"> View All Product</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="sprite1.jpeg" class="sprite">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="sprite1.jpeg" onclick="imgSlider('sprite1.jpeg');changeBgColor('#006400')"></li>
+            <li><img src="sprite2.jpeg" onclick="imgSlider('sprite2.jpeg');changeBgColor('#e60c2c')"></li>
+            <li><img src="sprite3.jpg" onclick="imgSlider('sprite3.jpg');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.sprite').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
